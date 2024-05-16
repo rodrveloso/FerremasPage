@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.producto {
+    list-style: none;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block; /* Mostrar productos en línea */
+    width: calc(20% - 20px); /* Calcular el ancho para mostrar 5 productos en una fila */
+    margin-right: 20px; /* Margen derecho para separar los productos */
+    vertical-align: top; /* Alinear los productos en la parte superior */
+    box-sizing: border-box; /* Incluir bordes y padding en el ancho */
+}
+
+.producto img {
+    display: block;
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+    margin-bottom: 10px;
+    border-radius: 5px;
+    object-fit: cover; /* Escala la imagen para que se ajuste completamente al contenedor sin distorsionarla */
+}
+
+
+.producto h2 {
+    margin-top: 0;
+}
+
+.producto p {
+    margin: 5px 0;
+}
+

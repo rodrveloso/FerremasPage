@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Productos</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Productos</h1>
+        <ul>
+            {% for producto in productos %}
+            <li class="producto">
+                <h2>{{ producto.nombre }}</h2>
+                <img src="{{ producto.imagen }}" alt="{{ producto.nombre }}">
+                <p> {{ producto.descripcion }}</p>
+                <p>Quedan: {{ producto.existencia }}</p>
+                <p>Precio: ${{ producto.precio }}</p>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
+
+
+
